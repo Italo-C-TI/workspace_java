@@ -6,6 +6,8 @@ public class ContaBancaria {
 	private int    tipo;
 	private double saldo;
 		
+	
+
 	public String getNomeTitular() {
 		return nomeTitular;
 	}

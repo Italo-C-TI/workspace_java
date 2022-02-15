@@ -1,0 +1,5 @@
+Orientação a Objetos Puro
+REUSO - a mesma estrutura (classe/tipo) é utilizada em vários módulos do meu sistema (ex: tipo Produto sendo usado no módulo de carrinho de compras, de vitrine, de estoque, de gerenciamento)
+
+Herança
+REUSO - Eu reaproveito uma estrutura já declarada e faço as devidas "modificações", inserindo novos atributos e novos métodos nesta estrutura já existente
