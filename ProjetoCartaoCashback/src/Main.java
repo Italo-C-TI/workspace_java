@@ -6,7 +6,7 @@ public class Main {
 		CartaoPrePago c2;
 		
 		c1 = new CartaoPrePago("98765430","Italo",2030,8);
-		c2 = new CartaoCashBack("000000010","Italo2",2031, 5, 1);
+		c2 = new CartaoCashBack("000000010","Italo2",2031, 5, 0);
 		
 		System.out.println(c1);
 		System.out.println(c2);

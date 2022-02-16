@@ -23,13 +23,16 @@ public class CartaoCashBack extends CartaoPrePago {
 	
 	@Override
 	public String toString() {
-		return super.toString() + " tipo = "+ (tipo == 2?"gold":tipo == 1?"silver":"bronze");
+		return super.toString() + " tipo = "+ getTipoTexto();
 	}
 	
-	public int getTipo() {
-		return tipo;
+	public String getTipoTexto() {
+		return (tipo == 2?"gold":tipo == 1?"silver":tipo ==0?"bronze":"Invalido");
 	}
 
+	public int getTipo() {
+		return this.tipo;
+	}
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
