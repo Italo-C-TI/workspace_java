@@ -11,7 +11,7 @@ public class Comercial extends Imovel implements BemTributavel {
 
 	@Override
 	public String toString() {
-		return super.toString() + "Comercial [uso=" + uso + "]";
+		return super.toString() + "Comercial [uso=" + uso + "]\n";
 	}
 
 	public boolean isUso() {

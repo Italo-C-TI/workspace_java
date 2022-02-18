@@ -10,7 +10,7 @@ public class Rural extends Imovel {
 
 	@Override
 	public String toString() {
-		return super.toString() + "Rural [tipo=" + tipo + "]";
+		return super.toString() + "Rural [tipo=" + tipo + "]\n";
 	}
 
 	public String getTipo() {

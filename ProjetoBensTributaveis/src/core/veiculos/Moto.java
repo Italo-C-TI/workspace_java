@@ -12,7 +12,7 @@ public class Moto extends Veiculo implements BemTributavel {
 
 	@Override
 	public String toString() {
-		return super.toString() + "Moto [cilindradas=" + cilindradas + ", tipo=" + tipo + "]";
+		return super.toString() + "Moto [cilindradas=" + cilindradas + ", tipo=" + tipo + "]\n";
 	}
 	
 	public int getCilindradas() {

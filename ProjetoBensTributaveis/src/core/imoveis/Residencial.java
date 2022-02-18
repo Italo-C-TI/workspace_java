@@ -11,7 +11,7 @@ public class Residencial extends Imovel implements BemTributavel {
 
 	@Override
 	public String toString() {
-		return super.toString() + "Residencial [metragem=" + metragem + "]";
+		return super.toString() + "Residencial [metragem=" + metragem + "]\n";
 	}
 
 	public float getMetragem() {

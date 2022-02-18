@@ -14,7 +14,7 @@ public class Carro extends Veiculo implements BemTributavel {
 
 	@Override
 	public String toString() {
-		return super.toString() +"Carro [nPortas=" + nPortas + ", potencia=" + potencia + "]";
+		return super.toString() +"Carro [nPortas=" + nPortas + ", potencia=" + potencia + "]\n";
 	}
 	
 
