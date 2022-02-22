@@ -1,5 +1,7 @@
 package br.com.isidrocorp.pibank.core;
 
+import br.com.isidrocorp.pibank.core.exceptions.ContaException;
+
 public class Conta {
 	protected String nomeTitular;
 	protected String cpf;
@@ -14,11 +16,17 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
-	public void creditar(double valor) {
+	public void creditar(double valor) throws ContaException{
+		if (valor <= 0) {
+			throw new ContaException("Valor Invalido para crédito: ", valor);
+		}
 		this.saldo += valor;
 	}
 	
-	public boolean debitar(double valor) {
+	public boolean debitar(double valor) throws ContaException{
+		if (valor <= 0) {
+			throw new ContaException("Valor invalido para débito", valor);
+		}
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
 			return true;

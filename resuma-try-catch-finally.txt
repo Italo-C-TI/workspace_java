@@ -1,0 +1,23 @@
+		try       --> gerencia a execução do código
+		catch(es) --> coloco várias tratativas de possíveis "Exceptions" que 
+		              mapeei
+		finally   --> trecho de código que garante a execução de determinadas
+			      instruções, dando certo ou não
+
+	
+	combinações
+		try     - obrigatório
+		catch   - obrigatório / opcional se tiver cláusula finally
+		finally - opcional    / obrigatório se não tiver catch
+
+	Por que finally?
+		opção 1 - tornar mais "explícita e ainda gerenciável" a tratativa
+			  de executar algum procedimento mesmo dando certo ou errado
+			  - legibilidade
+		opção 2 - Casos de Try sem Catch e com Finally - quando gera o 	
+			  comportamento "normal", eu garanto a execução do finally, porém
+			  posso não ter nenhuma rotina de tratamento, porém o bloco
+			  finally executa entretanto há uma exception pendente que não
+			  foi tratada. Por segurança a JVM interrompe
+
+

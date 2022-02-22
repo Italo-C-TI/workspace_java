@@ -33,6 +33,4 @@ public class Carro {
 	public void setFuncionando(boolean funcionando) {
 		this.funcionando = funcionando;
 	}
-	
-	
 }
