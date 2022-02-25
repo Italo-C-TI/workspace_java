@@ -1,0 +1,8 @@
+1    ;1234    ;Roberto Chefe    ;10000.0    ;15.0    ;2500.0
+2    ;1235    ; Joana Comissionada     ;2000.0    ;20.0
+2    ;1236    ; Paulo Comiisionado     ;2300.0    ;22.0
+2    ;1237    ; Maria Comissionada     ;2500.0    ;25.0
+3    ;1238    ; João Horista     ;100    ;50.35
+3    ;1239    ; Jose Horista     ;100    ;60.57
+4    ;1240    ; Pedro Empreiteiro     ;3500.0
+4    ;1241    ; Ana Empreiteira       ;4250.0

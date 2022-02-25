@@ -6,8 +6,8 @@ public abstract class Funcionario {
 	
 	public Funcionario(String nome, int numeroRegistro) {
 		super();
-		this.nome = nome;
 		this.numeroRegistro = numeroRegistro;
+		this.nome = nome;
 	}
 	public String getNome() {
 		return nome;
