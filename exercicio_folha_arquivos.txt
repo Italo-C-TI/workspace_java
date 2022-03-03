@@ -1,0 +1,44 @@
+Levando em conta o problema da folha de pagamento ACME, faça uma "melhoria" no código, agora lendo os dados de um arquivo no seguinte formato:
+
+TIPO ; NUMERO_FUNCIONAL ; NOME ; VALOR1 ; VALOR2 ; VALOR3 
+
+Perceba que há 4 tipos de funcionários
+1 - Chefe
+2 - Comissionado
+3 - Horista
+4 - Empreiteiro
+
+o padrão de linha pra o chefe é
+TIPO ; NUM  ; NOME          ; SAL_BASE ; AD_FUNCAO ; BEN_TERNO
+1    ; 1234 ; Roberto Chefe ; 10000.00 ;   15.00   ; 2500.00
+
+o padrão de linha para o comissionado é
+TIPO ; NUM  ; NOME               ; SAL_BASE ; COMISSAO 
+2    ; 1235 ; Joana Comissionada ; 2000.00  ; 20.00
+
+o padrão de linha para o Horista é
+TIPO ; NUM  ; NOME          ; NUM_HORAS ; VALOR_HORA
+3    ; 1236 ; João Horista  ;   100     ; 50.35	
+
+o padrão de linha para o Empreiteiro é
+TIPO ; NUM  ; NOME              ; VL_EMPREITA
+4    ; 1237 ; Pedro Empreiteiro ; 3500.00
+
+
+Qual o objetivo? Você ler o arquivo e calcular a folha de pagamento
+*** Além das classes que você deve implementar (levando em conta a classe abstrata Funcionario)
+
+V1 - Tudo na main, desde a leitura e instanciação dos objetos em um ArrayList (ArrayList.add)
+V2 - Criar um "Conversor de linhas de arquivo para objetos" (mesmo molde da nossa Fábrica) - esse cara pode ficar relativamente grandinho (vocês podem inclusive fazer métodos específicos para criar cada objeto diferente)
+V3 - Comece a pensar em tratar Exceptions (de modo que vocês também consigam lançar suas próprias exceptions)
+
+Sugestão de organização
+- package para as classes que armazenam os dados dos funcionários (model)
+- package para a  fábrica de funcionários (factory)
+- package para as exceções (exceptions)
+- package para a classe principal (main)
+
+Agora vamos criar uma abstração para nosso modelo de exibição de dados
+V1 - ao invés de mostrar na tela, grave tudo num arquivo (na própria MAIN)
+V2 - crie uma classe que tenha algum método que receba a lista de funcionários e grave-a num arquivo
+V3 - crie uma interface que tenha esse método e 2 implementações (A que já vai existir gravando em arquivos e uma 2a que exiba na tela)

@@ -1,0 +1,8 @@
+Professor Isidro ; 8.0 ; 7.5
+Silvano Araujo; 9.5; 9.0
+Bianca Padilha; 7.5; 10.0
+Donovan Tarsis; 8.5; 7.0
+Edvan Junior ; 8.0 ; 8.5
+Ana Carol Amaral ; 8.5 ; 9.5
+Lisandre Darioli ; 10.0 ; 8.0
+Franklin  Percicotte ; 9.0 ; 8.5
