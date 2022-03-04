@@ -1,17 +1,26 @@
 package UI;
 import core.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class Main {
 	public static void main(String args[]) {
-		Funcionario lista[] = new Funcionario[4];
+		List<Funcionario> lista;
+		lista = Arrays.asList(		
+				new Empreiteiro("Jose", 121212, 3000),
+				new Horista("Joao", 131313, (float)85.92 , 150),
+				new Comissionado("Junior", 141414, 1300, 25),
+				new Chefe("Jubileu", 151515, 8000 , 22 , 1500));
 		
-		lista[0] = new Empreiteiro("Jose", 121212, 3000);
-		lista[1] = new Horista("Joao", 131313, (float)85.92 , 150);
-		lista[2] = new Comissionado("Junior", 141414, 1300, 25);
-		lista[3] = new Chefe("Jubileu", 151515, 8000 , 22 , 1500);
-		
-		for (Funcionario f: lista) {
 
-			System.out.println(f.getNome()+" - Salario devido R$ "+String.format("%.2f", f.calcularSalario()));
-		}
+		
+		lista.stream().forEach(e -> System.out.print(e+ " \n"));
+		System.out.println();
+		lista.stream().sorted(Comparator.comparing(e->e.calcularSalario())).forEach(e -> System.out.print("R$ "+e.calcularSalario() +" eh o valor do salario do(a) "+e+"\n"));
+		System.out.println();
+		lista.stream().sorted(Comparator.comparing(e->e.getNome())).forEach(e -> System.out.print(e+ " \n"));
+		System.out.println();
 	}
 }

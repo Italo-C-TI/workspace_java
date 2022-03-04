@@ -7,6 +7,13 @@ public class Empreiteiro extends Funcionario {
 		super(nome, numeroRegistro);
 		this.valorEmpreita = valorEmpreita;
 	}
+	
+
+	@Override
+	public String toString() {
+		return super.toString() +"Empreiteiro [valorEmpreita=" + valorEmpreita + "]";
+	}
+
 
 	public float getValorEmpreita() {
 		return valorEmpreita;

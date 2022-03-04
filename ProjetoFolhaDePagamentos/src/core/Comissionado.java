@@ -10,6 +10,11 @@ public class Comissionado extends Funcionario {
 		this.comissao = comissao;
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() +"Comissionado [salarioBase=" + salarioBase + ", comissao=" + comissao + "]";
+	}
+
 	public float getSalarioBase() {
 		return salarioBase;
 	}

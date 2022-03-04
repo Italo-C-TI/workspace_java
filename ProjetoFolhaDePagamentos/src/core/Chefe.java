@@ -13,6 +13,12 @@ public class Chefe extends Funcionario {
 
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() +"Chefe [salarioBase=" + salarioBase + ", adicionalFuncao=" + adicionalFuncao + ", beneficioTerno="
+				+ beneficioTerno + "]";
+	}
+
 	public float getSalarioBase() {
 		return salarioBase;
 	}

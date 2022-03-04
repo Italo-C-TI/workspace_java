@@ -9,6 +9,12 @@ public abstract class Funcionario {
 		this.numeroRegistro = numeroRegistro;
 		this.nome = nome;
 	}
+	
+	@Override
+	public String toString() {
+		return "Funcionario(a) " + nome + " de numeroRegistro= " + numeroRegistro + " é ";
+	}
+
 	public String getNome() {
 		return nome;
 	}

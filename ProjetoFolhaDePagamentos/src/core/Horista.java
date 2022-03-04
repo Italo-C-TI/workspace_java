@@ -9,6 +9,12 @@ public class Horista extends Funcionario {
 		this.numeroHoras = numeroHoras;
 		
 	}
+	
+	@Override
+	public String toString() {
+		return super.toString() +"Horista [valorHora=" + valorHora + ", numeroHoras=" + numeroHoras + "]";
+	}
+
 	public float getValorHora() {
 		return valorHora;
 	}
