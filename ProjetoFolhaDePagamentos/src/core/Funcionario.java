@@ -1,6 +1,6 @@
 package core;
 
-public abstract class Funcionario {
+public abstract class Funcionario implements Comparable<Funcionario>{
 	protected String nome;
 	protected int numeroRegistro;
 	
@@ -30,4 +30,17 @@ public abstract class Funcionario {
 	
 	public abstract double calcularSalario();
 
+	@Override
+	public int compareTo(Funcionario outro) {
+		// TODO Auto-generated method stub
+			
+		if (this.numeroRegistro < outro.getNumeroRegistro()) {
+			return -1;
+		}
+		else if (this.numeroRegistro > outro.getNumeroRegistro()) {
+			return 1;
+		}
+		return 0;		
+		}
 }
+
